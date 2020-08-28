@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--color-black);
+}
+
+.grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.grid a {
+  text-decoration: none;
+  color: #333;
+  display: grid;
+  grid-template-rows: 280px auto;
+}
+
+.grid picture {
+  overflow: hidden;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

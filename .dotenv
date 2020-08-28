@@ -1,0 +1,15 @@
+X-Crystallize-Access-Token-Id
+4aab359c664320d54cc9
+
+X-Crystallize-Access-Token-Secret
+e81adeb937b76da67e9d2ba30fdef721267f2e0a
+
+fetch('https://pim.crystallize.com/graphql', {
+                  method: 'post',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'X-Crystallize-Access-Token-Id': '4aab359c664320d54cc9',
+                    'X-Crystallize-Access-Token-Secret': 'insert-your-secret-token-here'
+                  },
+                  body: JSON.stringify(...)
+                })

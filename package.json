@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "domain",
+    "storybook"
+  ],
+  "scripts": {
+    "dev:storybook": "yarn workspace @orgname/storybook dev",
+    "dev:domain": "yarn workspace @orgname/domain dev",
+    "dev": "yarn dev:domain & yarn dev:storybook",
+    "build:storybook": "yarn workspace @orgname/storybook build",
+    "build:domain": "yarn workspace @orgname/domain build",
+    "export:domain": "yarn workspace @orgname/domain export"
+  }
+}

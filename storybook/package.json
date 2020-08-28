@@ -1,0 +1,23 @@
+{
+  "name": "@orgname/storybook",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@storybook/addon-actions": "^6.0.5",
+    "@storybook/addon-essentials": "^6.0.5",
+    "@storybook/addon-links": "^6.0.5",
+    "@storybook/svelte": "^6.0.5",
+    "babel-loader": "^8.1.0",
+    "react-is": "^16.13.1",
+    "svelte": "^3.24.1",
+    "svelte-loader": "^2.13.6"
+  },
+  "dependencies": {
+		"@orgname/kit": "*"
+	},
+	"scripts": {
+		"dev": "yarn kit:svg & start-storybook -p 3002 -s ../domain/static/",
+		"build": "yarn kit:svg & build-storybook",
+		"kit:svg": "kit inject-svg -f ./.storybook/preview-body.html"
+	}
+}

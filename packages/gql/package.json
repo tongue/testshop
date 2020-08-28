@@ -1,0 +1,6 @@
+{
+  "name": "@orgname/gql",
+  "version": "1.0.0",
+  "main": "gql.js",
+  "license": "MIT"
+}

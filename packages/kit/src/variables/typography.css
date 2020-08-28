@@ -1,0 +1,37 @@
+/**
+* @tokens Font Family
+* @presenter FontFamily
+*/
+
+:root {
+	--font-family: sans-serif;
+}
+
+/**
+* @tokens Font Sizes
+* @presenter FontSize
+*/
+
+:root {
+	--font-size-m: 1em;
+}
+
+/**
+* @tokens Font Weights
+* @presenter FontWeight
+*/
+
+:root {
+	--font-weight-normal: 400;
+	--font-weight-bold: 600;
+}
+
+/**
+ * @tokens Line Heights
+ * @presenter LineHeight
+ */
+
+:root {
+	--line-height-none: 1;
+	--line-height: 133%;
+}
